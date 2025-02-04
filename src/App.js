@@ -4,6 +4,8 @@ import Navbar from './components/Layout/Navbar';
 import MainPage from './components/MainPage';
 import Tooling from './components/Tooling';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <MainPage />
       <Tooling />
       <Projects />
+      <Experience />
+      <Footer />
     </div>
   );
 }
