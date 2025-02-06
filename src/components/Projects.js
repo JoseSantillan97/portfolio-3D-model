@@ -1,28 +1,20 @@
 import Landrada from './../assets/images/landrada.webp'
-import Landrada2 from './../assets/images/landrada2.webp'
 import Landrada3 from './../assets/images/image-developments2.webp'
-import Landrada4 from './../assets/images/landrada4.webp'
-import logoDevkoore from './../assets/images/logo-atomico.webp'
-import Motoenvia from './../assets/images/map_placeholder.svg'
-import Motoenvia2 from './../assets/images/inicio_img.png'
 import Motoenvia4 from './../assets/images/img_completedata.svg'
 import logoMotoenvia from './../assets/images/logo-motoenvia.png'
 import logoLandrada from './../assets/images/logoLandrada.png'
 import logoLandrada2 from './../assets/images/logoLandrada2.png'
-// import logoLandrada2 from './../assets/images/logo-landrada-footer.png'
 import seicti from './../assets/images/seicti.png'
 import logoSeicti from './../assets/images/logoSeicti.png'
 import laPopular from './../assets/images/lapopular.jpg'
-import laPopular2 from './../assets/images/lapopular2.jpg'
 import logoPopular from './../assets/images/logoPopular.png'
 import logoJS from './../assets/images/logoJS.png'
-import desktop from './../assets/images/desktopJS.jpg'
 import desktop2 from './../assets/images/desktopJS2.jpg'
 
 export default function Projects() {
   return (
     <section className="projects">
-      <h2>Projects</h2>
+      <h2 className="projects-title">Projects</h2>
       <div className="projects-container">
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">

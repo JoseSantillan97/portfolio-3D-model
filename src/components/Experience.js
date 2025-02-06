@@ -10,7 +10,7 @@ import Update from './Update';
 export default function Experience() {
   return (
     <section className='experience'>
-      <h2>Experience</h2>
+      <h2 className="experience-title">Experience</h2>
       <div className='experience-timeline'>
         <VerticalTimeline>
           <VerticalTimelineElement
@@ -23,7 +23,7 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">Líder de Frontend</h3>
             <h4 className="vertical-timeline-element-subtitle">Landrada Landing Page - DevKoore</h4>
-            <p>
+            <p className="vertical-timeline-element-text">
               Líder en Equipo de desarrollo Frontend para la creación de una landing page completamente dinámica,
               utilizando herramientas como: Next.js, React.js, Mapbox, GraphQL, Git, GitLab, MaterialUI entre otras.
             </p>
@@ -37,7 +37,7 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">Lider de Frontend</h3>
             <h4 className="vertical-timeline-element-subtitle">Landrada Administrador - DevKoore</h4>
-            <p>
+            <p className="vertical-timeline-element-text">
               Desarrollo de un sistema administrador para inmobiliaria con múltiples módulos, se utilizaron
               herramientas como: Next.js, React.js, docker, RestAPI, GraphQL, MaterialUI, Mapbox, entre otras.
             </p>
@@ -51,7 +51,7 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Motoenvia - DevKoore</h4>
-            <p>
+            <p className="vertical-timeline-element-text">
               Sistema para el envió de paquetes expres de un punto a otro en el área de Cancún. Se utilizarón herramientas
               para uso de localización como Google Maps Platform y su seguimiento en tiempo real, con Socket.IO, también
               Next.js, React.js, RestAPI, docker, etc.
@@ -66,7 +66,7 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">FullStack Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">FAYAL - Virtua Mx</h4>
-            <p>
+            <p className="vertical-timeline-element-text">
               Desarrollo de Sistema Adminitrador para compañía de construcción con múltiples módulos, desde permisos de construcción
               hasta el uso de material y maquinaria y personal de la empresa. Se utilizaron herramientas como Laravel, Vue.js, RestAPI
               MySQL, etc.
@@ -81,7 +81,7 @@ export default function Experience() {
           >
             <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">SEICTI - Virtua Mx</h4>
-            <p>
+            <p className="vertical-timeline-element-text">
               Desarrollo de  una plataforma para el registro de investigadores, instituciones y empresas con actividad en
               científica y tecnológica. Se desarrollo utilizando herramientas como Vue.js, RestAPI, HTML5, CSS3, Bootstrap, etc
             </p>

@@ -68,11 +68,11 @@ export default function Tooling() {
                 backgroundColor="rgba(25,29,31,0)"
               />
             </div>
-            <span>Basic knowledge</span>
-            <p>HTML</p>
-            <p>CSS and SASS</p>
-            <p>Vanilla JS</p>
-            <p>Bootstrap, material UI</p>
+            <span className="tooling-tools-particles-title">Basic knowledge</span>
+            <p className="tooling-tools-particles-tech">HTML</p>
+            <p className="tooling-tools-particles-tech">CSS and SASS</p>
+            <p className="tooling-tools-particles-tech">Vanilla JS</p>
+            <p className="tooling-tools-particles-tech">Bootstrap, material UI</p>
           </div>
           <div className="tooling-tools-particles">
             <div>
@@ -90,11 +90,12 @@ export default function Tooling() {
                 />
               </div>
             </div>
-            <span>Frameworks/Libraries</span>
-            <p>React.js</p>
-            <p>Next.js</p>
-            <p>Vue.js</p>
-            <p>JQuery</p>
+            <span className="tooling-tools-particles-title">Frameworks/Libraries</span>
+            <p className="tooling-tools-particles-tech">React.js</p>
+            <p className="tooling-tools-particles-tech">Next.js</p>
+            <p className="tooling-tools-particles-tech">Vue.js</p>
+            <p className="tooling-tools-particles-tech">JQuery</p>
+            <p className="tooling-tools-particles-tech">Spline 3D</p>
           </div>
           <div className="tooling-tools-particles">
             <div>
@@ -112,11 +113,11 @@ export default function Tooling() {
                 />
               </div>
             </div>
-            <span>client-server communication</span>
-            <p>Rest API</p>
-            <p>Graph QL</p>
-            <p>SOAP</p>
-            <p>AJAX</p>
+            <span className="tooling-tools-particles-title">client-server communication</span>
+            <p className="tooling-tools-particles-tech">Rest API</p>
+            <p className="tooling-tools-particles-tech">Graph QL</p>
+            <p className="tooling-tools-particles-tech">SOAP</p>
+            <p className="tooling-tools-particles-tech">AJAX</p>
           </div>
           <div className="tooling-tools-particles">
             <div>
@@ -134,12 +135,12 @@ export default function Tooling() {
                 />
               </div>
             </div>
-            <span>More Tools</span>
-            <p>Docker</p>
-            <p>Mapbox</p>
-            <p>Socket.IO</p>
-            <p>Jenkins and CircleCI</p>
-            <p>Git, Github and gitlab</p>
+            <span className="tooling-tools-particles-title">More Tools</span>
+            <p className="tooling-tools-particles-tech">Docker</p>
+            <p className="tooling-tools-particles-tech">Mapbox</p>
+            <p className="tooling-tools-particles-tech">Socket.IO</p>
+            <p className="tooling-tools-particles-tech">Jenkins and CircleCI</p>
+            <p className="tooling-tools-particles-tech">Git, Github and gitlab</p>
           </div>
         </div>
       </section>

@@ -16,10 +16,10 @@
   background-color: transparent;
   top: 0;
   backdrop-filter: blur(8px);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   position: sticky;
   z-index: 99;
-  font-family: $font-inter;
+  font-family: $font-amatic;
 
   a {
     text-decoration: none;
@@ -69,7 +69,6 @@
     height: 100vh;
     margin-top: -50px;
     display: grid;
-    // align-items: center;
     grid-template-rows: 1fr 300px;
     position: relative;
 
@@ -82,18 +81,31 @@
         width: 50%;
         place-self: center;
 
-        h1 {
+        &-name {
           color: #FFF;
-          font-size: 2.7rem;
+          font-size: 1.5rem;
+          font-family: $font-poppins;
         }
 
-        h3 {
+        &-myname {
+          font-size: 2.4rem;
+          font-family: $font-combo;
+          color: rgba(100, 30, 30, .7);
+        }
+
+        &-title {
           font-size: 2rem;
           color: #79cfb0;
+          font-family: $font-orbitron;
+          margin-bottom: .5rem;
         }
 
-        p {
-          color: #d5f2e6;
+        &-text {
+          font-size: .85rem;
+          color: rgba(10, 240, 150, .6);
+          font-family: $font-quantico;
+          font-family: $font-roboto-mono;
+          margin-bottom: .2rem;
         }
       }
 
@@ -151,9 +163,10 @@
 
   h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 2.3rem;
     padding-top: 2.4rem;
     color: #f2f7fb;
+    font-family: $font-quantico;
   }
 
   &-tools {
@@ -167,6 +180,30 @@
       div {
         position: absolute;
       }
+
+      &-title {
+        font-size: 1.5rem;
+        color: #93b3e6;
+        font-family: $font-bebas;
+      }
+
+      &-tech {
+        font-family: $font-orbitron;
+        color: rgba(10, 240, 150, 1);
+        color: #0c5776;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px #000;
+        margin: 2rem auto;
+        z-index: 2;
+        font-weight: bold;
+        transition: .3s ease-in-out;
+
+        &:hover {
+          // font-size: 1.04rem;
+          color: rgba(255, 255, 255, 1);
+          background-color: rgba(0, 0, 0, .8);
+        }
+      }
     }
 
     div {
@@ -174,25 +211,6 @@
       text-align: center;
       display: grid;
       justify-content: center;
-      // width: 100%;
-
-      span {
-        font-size: 1.5rem;
-        color: #93b3e6;
-      }
-
-      p {
-        color: #e5ebf9;
-        margin: 2rem auto;
-        z-index: 2;
-        // border: 1px solid #f3f5fc;
-      }
-
-      &:hover {
-        // background-color: #131926;
-        // opacity: .5;
-        // background-color: red;
-      }
     }
 
   }
@@ -205,9 +223,12 @@
 
   background-color: #21516b;
 
-  h2 {
+  &-title {
     text-align: center;
     padding-top: 3rem;
+    font-size: 2.3rem;
+    color: #FFF;
+    font-family: $font-quantico;
   }
 
   &-container {
@@ -355,9 +376,10 @@
   justify-self: center;
   margin-bottom: 2px;
   color: white;
-  font-size: 1.375rem;
+  font-size: 1.8rem;
   font-weight: 100;
   letter-spacing: 0.1rem;
+  font-family: $font-bebas;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -379,10 +401,15 @@
   justify-self: center;
   display: inline-block;
   font-size: 0.625rem;
-  font-weight: 100;
+  font-weight: bold;
+  font-family: $font-roboto-mono;
+
   text-align: center;
   letter-spacing: 0.35rem;
-  color: rgba(100, 130, 200, 0.45);
+  color: rgba(100, 130, 200, 1);
+  color: #000;
+  text-shadow: 1px 1px #FFF;
+  text-transform: uppercase;
   -webkit-transition: all 0.65s ease;
   transition: all 0.65s ease;
 }
@@ -397,10 +424,11 @@
   transform: translateY(30%);
   display: block;
   margin: 22px 0 16px 0;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   font-weight: 100;
-  /*text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.35);*/
-  color: rgba(255, 255, 255, 0.65);
+  font-family: $font-poppins;
+  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 01);
+  color: rgba(255, 255, 255, 1);
   opacity: 0;
   -webkit-transition: all 0.65s ease;
   transition: all 0.65s ease;
@@ -480,15 +508,42 @@
   height: auto;
   grid-template-rows: 130px 1fr;
 
-  h2 {
+  &-title {
     color: #FFF;
     display: grid;
     place-content: center;
+    font-size: 2.3rem;
+    font-family: $font-quantico;
   }
 
   &-timeline {
     width: 80%;
     place-self: center;
+
+  }
+}
+
+.vertical {
+  &-timeline {
+    &-element {
+      &-title {
+        font-size: 1.8rem;
+        font-family: $font-oswald;
+      }
+
+      &-subtitle {
+        font-family: $font-poppins;
+      }
+
+      &-text {
+        font-size: .8rem !important;
+        font-family: $font-roboto-mono;
+      }
+
+      &-date {
+        font-family: $font-quantico;
+      }
+    }
   }
 }
 
@@ -555,4 +610,27 @@
   place-content: center;
   color: #FFF;
   height: 45px;
+
+  &-container {
+
+    &-made {
+      font-size: .8rem;
+      font-family: $font-poppins;
+    }
+
+    &-heart {
+      font-size: 1.3rem;
+    }
+
+    &-name {
+      color: rgba(100, 30, 30, 1);
+      font-size: 1.5rem;
+      font-family: $font-combo;
+    }
+
+    &-rights {
+      font-size: .6rem;
+      font-family: $font-orbitron;
+    }
+  }
 }

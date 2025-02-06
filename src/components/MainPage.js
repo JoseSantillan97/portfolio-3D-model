@@ -5,30 +5,23 @@ import github from './../assets/images/github.png'
 import linkedin from './../assets/images/linkedin.png'
 import SplineBMO from './SplineBMO'
 
-
-
 export default function MainPage() {
 
   return (
     <section className="container">
-      <div
-        className='container-bmo'
-      >
+      <div className='container-bmo'>
         <SplineBMO />
       </div>
       < div className="container-main" >
         <div className="container-main-sec1">
           <div className="container-main-sec1-information">
-            <h1>Hi, I am José Santillan</h1>
-            <h3>Frontend Web Developer</h3>
-            <p>
-              Me apasiona desarrollar soluciones tecnológicas innovadoras
-              utilizando las herramientas más actuales. Disfruto enfrentar
-              retos profesionales, siempre manteniendo la mente abierta.
-              Me encanta contribuir al éxito de mi equipo de trabajo y
-              considero fundamental mantener mi stack tecnológico actualizado
-              de manera constante.
-            </p>
+            <h1 className="container-main-sec1-information-name">Hi, I am
+              <span className='container-main-sec1-information-myname'> José Santillan</span>
+            </h1>
+            <h3 className="container-main-sec1-information-title">Frontend Web Developer</h3>
+            <p className="container-main-sec1-information-text">🚀 Me apasiona la tecnología moderna.</p>
+            <p className="container-main-sec1-information-text">🎯 Disfruto superar desafíos.</p>
+            <p className="container-main-sec1-information-text">🔄 Actualizo mi stack constantemente.</p>
           </div>
         </div>
         <div className="container-main-sec2">
