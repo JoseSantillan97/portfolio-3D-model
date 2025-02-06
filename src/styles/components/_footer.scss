@@ -1,0 +1,46 @@
+@use '../abstract/minxins';
+@use '../abstract/variables';
+
+.footer {
+  background-color: #161d2e;
+  display: grid;
+  place-content: center;
+  color: #FFF;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    margin: 2rem 0;
+    text-align: center;
+
+    @include minxins.responsive(variables.$medium) {
+      display: block;
+      margin: 1rem 0;
+    }
+
+    &-made {
+      font-size: .8rem;
+      font-family: variables.$font-poppins;
+    }
+
+    &-heart {
+      font-size: 1.3rem;
+    }
+
+    &-name {
+      color: rgba(100, 30, 30, 1);
+      font-size: 1.5rem;
+      font-family: variables.$font-combo;
+      margin: 3rem 0;
+
+      @include minxins.responsive(variables.$medium) {
+        margin: 0;
+      }
+    }
+
+    &-rights {
+      font-size: .6rem;
+      font-family: variables.$font-orbitron;
+    }
+  }
+}

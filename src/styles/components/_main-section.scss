@@ -1,0 +1,166 @@
+@use '../abstract/minxins';
+@use '../abstract/variables';
+
+.container {
+  position: relative;
+
+  &-bmo {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+
+    .spline {
+      width: 200%;
+      margin-left: -100%;
+
+      height: 100% !important;
+
+      @include minxins.responsive(variables.$small) {
+        width: 150%;
+        margin-left: -50%;
+      }
+
+      @include minxins.responsive(variables.$medium) {
+        width: 100%;
+        margin-left: -0%;
+      }
+
+      div {
+        // height: 100%;
+
+        canvas {
+          padding-top: 300px;
+
+          @include minxins.responsive(variables.$medium) {
+            padding-top: 55px;
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    background-color: #204f42;
+    min-height: 100vh;
+    margin-top: -50px;
+    display: grid;
+    grid-template-rows: 1fr 300px;
+    position: relative;
+
+    &-sec1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      // align-items: center;
+      place-content: baseline;
+      padding-top: 5rem;
+      z-index: 9;
+
+      @include minxins.responsive(variables.$medium) {
+        grid-template-columns: 3fr 2fr;
+        place-content: center;
+        padding-top: 0;
+        z-index: 0;
+      }
+
+      &-information {
+        width: 50%;
+        place-self: center;
+
+        &-name {
+          color: #FFF;
+          font-size: 1.5rem;
+          font-family: variables.$font-poppins;
+        }
+
+        &-myname {
+          font-size: 2.4rem;
+          font-family: variables.$font-combo;
+          color: rgba(100, 30, 30, .7);
+        }
+
+        &-title {
+          font-size: 2rem;
+          color: #79cfb0;
+          font-family: variables.$font-orbitron;
+          margin-bottom: .5rem;
+        }
+
+        &-text {
+          // font-size: 1.4rem;
+          // color: rgba(0, 0, 0, 1);
+          // text-shadow: 1px 1px #FFF;
+          font-family: variables.$font-quantico;
+          font-family: variables.$font-roboto-mono;
+          margin-bottom: .2rem;
+          opacity: 0;
+
+          @include minxins.responsive(variables.$medium) {
+            font-size: .85rem;
+            color: rgba(10, 240, 150, .7);
+            text-shadow: none;
+            opacity: 1;
+          }
+        }
+      }
+
+      &-bmo {
+        .spline {
+          background-color: transparent !important;
+          width: 100%;
+          height: 100vh;
+
+        }
+      }
+
+      &-image {
+        background-color: #1e4338;
+        width: 400px;
+        height: 350px;
+        border-radius: 50%;
+        position: relative;
+
+        img {
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          border-radius: 47%;
+        }
+      }
+    }
+
+    &-sec2 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 60%;
+      margin: 0 auto;
+      justify-items: center;
+      place-items: center;
+
+      @include minxins.responsive(variables.$medium) {
+        place-items: baseline;
+      }
+
+      a {
+        z-index: 999;
+        height: 50px;
+        margin-top: 8rem;
+
+        @include minxins.responsive(variables.$medium) {
+          margin-top: 0rem;
+        }
+
+        img {
+          width: 38px;
+
+          @include minxins.responsive(variables.$medium) {
+            width: 50px;
+          }
+        }
+      }
+
+    }
+
+  }
+}

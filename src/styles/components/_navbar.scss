@@ -1,0 +1,47 @@
+@use '../abstract/minxins';
+@use '../abstract/variables';
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	height: 50px;
+	align-items: center;
+	background-color: transparent;
+	top: 0;
+	backdrop-filter: blur(8px);
+	font-size: .9rem;
+	position: sticky;
+	z-index: 99;
+	font-family: variables.$font-amatic;
+
+	@include minxins.responsive(variables.$medium) {
+		font-size: 1.1rem;
+	}
+
+	@include minxins.responsive(variables.$large) {
+		font-size: 1.3rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	div {
+		li {
+			display: inline-block;
+			justify-content: space-between;
+		}
+	}
+
+	.navbar-list {
+		width: 50%;
+
+		ul {
+			display: flex;
+			justify-content: space-around;
+
+		}
+	}
+}

@@ -1,3 +1,4 @@
+import '../../styles/components/_navbar.scss'
 export default function Navbar() {
   return (
     <section className='navbar'>

@@ -10,6 +10,7 @@ import laPopular from './../assets/images/lapopular.jpg'
 import logoPopular from './../assets/images/logoPopular.png'
 import logoJS from './../assets/images/logoJS.png'
 import desktop2 from './../assets/images/desktopJS2.jpg'
+import '../styles/components/_projects.scss'
 
 export default function Projects() {
   return (

@@ -8,6 +8,7 @@ import react from './../logo.svg'
 import basic from './../assets/images/html.svg'
 import clientServer from './../assets/images/graphql.svg'
 import octocat from './../assets/images/github-tile.svg'
+import '../styles/components/_tooling.scss'
 
 const particleOptionsBasic: ParticleOptions = {
   filter: ({ x, y, image }) => {

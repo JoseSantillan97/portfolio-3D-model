@@ -4,6 +4,7 @@ import whatsapp from './../assets/images/whatsapp.png'
 import github from './../assets/images/github.png'
 import linkedin from './../assets/images/linkedin.png'
 import SplineBMO from './SplineBMO'
+import '../styles/components/_main-section.scss'
 
 export default function MainPage() {
 

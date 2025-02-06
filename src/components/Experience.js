@@ -5,6 +5,7 @@ import { IoSchool } from "react-icons/io5";
 import Virtua from './Virtua';
 import Devkoore from './Devkoore';
 import Update from './Update';
+import '../styles/components/_experience.scss'
 
 
 export default function Experience() {
