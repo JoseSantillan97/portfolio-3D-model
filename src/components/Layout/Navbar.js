@@ -1,18 +1,19 @@
 import '../../styles/components/_navbar.scss'
+import CV from '../../assets/docs/CV-Frontend-Developer-JOSÉ-SANTILLÁN.pdf'
 export default function Navbar() {
   return (
     <section className='navbar'>
-      <div className="navbar-logo">
+      <article className="navbar-logo">
         <a href="#main">José Santillán</a>
-      </div>
-      <div className="navbar-list">
+      </article>
+      <article className="navbar-list">
         <ul>
-          <li><a href="#">Tooling</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Download CV</a></li>
+          <li><a href="#tooling">Tooling</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
         </ul>
-      </div>
+      </article>
+      <article><a target="_blank" href={CV}>Download CV</a></article>
     </section>
   )
 }

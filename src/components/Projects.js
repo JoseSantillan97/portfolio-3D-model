@@ -14,7 +14,7 @@ import '../styles/components/_projects.scss'
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="projects-container">
         <article className="projects-container-project">

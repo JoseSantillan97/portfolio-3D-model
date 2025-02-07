@@ -4,19 +4,20 @@
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 50px;
+	padding: 0 10px;
 	height: 50px;
 	align-items: center;
 	background-color: transparent;
 	top: 0;
 	backdrop-filter: blur(8px);
-	font-size: .9rem;
+	font-size: 1.15rem;
 	position: sticky;
 	z-index: 99;
 	font-family: variables.$font-amatic;
 
 	@include minxins.responsive(variables.$medium) {
-		font-size: 1.1rem;
+		font-size: 1.4rem;
+		padding: 0 50px;
 	}
 
 	@include minxins.responsive(variables.$large) {
@@ -41,7 +42,7 @@
 		ul {
 			display: flex;
 			justify-content: space-around;
-
+			list-style-type: none;
 		}
 	}
 }

@@ -28,21 +28,42 @@ const particleOptionsFrameworks: ParticleOptions = {
     const pixel = image.get(x, y);
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#61dafb"
+  color: ({ x, y, image }) => "#61dafb",
+  radius: () => Math.random() * 1.5 + 0.5,
+  mass: () => 40,
+  friction: () => .15,
+  initialPosition: ({ canvasDimensions }) => {
+    return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
+  }
+
 };
 const particleOptionsCommunication: ParticleOptions = {
   filter: ({ x, y, image }) => {
     const pixel = image.get(x, y);
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#e10098"
+  color: ({ x, y, image }) => "#e10098",
+  radius: () => Math.random() * 1.5 + 0.5,
+  mass: () => 40,
+  friction: () => .15,
+  initialPosition: ({ canvasDimensions }) => {
+    return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
+  }
+
 };
 const particleOptionsMore: ParticleOptions = {
   filter: ({ x, y, image }) => {
     const pixel = image.get(x, y);
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#AAAA0"
+  color: ({ x, y, image }) => "#AAAA0",
+  radius: () => Math.random() * 1.5 + 0.5,
+  mass: () => 40,
+  friction: () => .15,
+  initialPosition: ({ canvasDimensions }) => {
+    return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
+  }
+
 };
 
 const motionForce = (x: number, y: number): ParticleForce => {
@@ -52,7 +73,7 @@ const motionForce = (x: number, y: number): ParticleForce => {
 export default function Tooling() {
   return (
     <>
-      <section className="tooling">
+      <section id="tooling" className="tooling">
         <h2>Tooling</h2>
         <div className="tooling-tools">
           <div className="tooling-tools-particles">

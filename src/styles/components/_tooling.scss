@@ -32,6 +32,16 @@
 
       div {
         position: absolute;
+
+        canvas {
+          touch-action: manipulation !important;
+        }
+
+        div {
+          canvas {
+            touch-action: manipulation !important;
+          }
+        }
       }
 
       &-title {

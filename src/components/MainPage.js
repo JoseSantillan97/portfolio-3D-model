@@ -9,7 +9,7 @@ import '../styles/components/_main-section.scss'
 export default function MainPage() {
 
   return (
-    <section className="container">
+    <section id="main" className="container">
       <div className='container-bmo'>
         <SplineBMO />
       </div>

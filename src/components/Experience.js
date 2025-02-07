@@ -10,7 +10,7 @@ import '../styles/components/_experience.scss'
 
 export default function Experience() {
   return (
-    <section className='experience'>
+    <section id="experience" className='experience'>
       <h2 className="experience-title">Experience</h2>
       <div className='experience-timeline'>
         <VerticalTimeline>
