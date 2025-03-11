@@ -1,15 +1,14 @@
 import Landrada from './../assets/images/landrada.webp'
 import Landrada3 from './../assets/images/image-developments2.webp'
-import Motoenvia4 from './../assets/images/img_completedata.svg'
-import logoMotoenvia from './../assets/images/logo-motoenvia.png'
-import logoLandrada from './../assets/images/logoLandrada.png'
-import logoLandrada2 from './../assets/images/logoLandrada2.png'
-import seicti from './../assets/images/seicti.png'
-import logoSeicti from './../assets/images/logoSeicti.png'
 import laPopular from './../assets/images/lapopular.jpg'
-import logoPopular from './../assets/images/logoPopular.png'
-import logoJS from './../assets/images/logoJS.png'
-import desktop2 from './../assets/images/desktopJS2.jpg'
+import desktop2 from './../assets/images/desktopJS2.webp'
+import logoMotoenvia from './../assets/images/logo-motoenvia.webp'
+import logoLandrada from './../assets/images/logoLandrada.webp'
+import seicti from './../assets/images/seicti.webp'
+import logoSeicti from './../assets/images/logoSeicti.webp'
+import logoPopular from './../assets/images/logoPopular.webp'
+import logoJS from './../assets/images/logoJS.webp'
+import Motoenvia4 from './../assets/images/img_completedata.svg'
 import '../styles/components/_projects.scss'
 
 export default function Projects() {
@@ -20,11 +19,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              <img src={Motoenvia4} />
+              <img src={Motoenvia4} alt='Imagen panomarica de MotoEnvia' loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoMotoenvia} alt="Logo Motoenvia" />
+                <img src={logoMotoenvia} alt="Logo Motoenvia" loading='lazy' />
               </figure>
             </div>
             <div class="card__body">
@@ -41,11 +40,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              <img src={Landrada} />
+              <img src={Landrada} alt='Imagen panoramica de Landrada' loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoLandrada} alt="Short description" />
+                <img src={logoLandrada} alt="Short description" loading='lazy' />
               </figure>
             </div>
             <div class="card__body">
@@ -62,11 +61,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              <img src={Landrada3} />
+              <img src={Landrada3} alt='Imagen panomarima de Landrada' loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoLandrada2} />
+                <img src={logoLandrada} alt='Logo de Landrada' loading='lazy' />
               </figure>
             </div>
             <div class="card__body">
@@ -83,11 +82,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              <img src={seicti} alt="Short description" />
+              <img src={seicti} alt="Imagen panoramica de SEICTI" loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoSeicti} alt="Short description" />
+                <img src={logoSeicti} alt="Logo de SEICTI" loading='lazy' />
               </figure>
             </div>
             <div class="card__body">
@@ -104,12 +103,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              <img src={laPopular} alt="Short description" />
-              {/* <img src={desktop2} alt="Short description" /> */}
+              <img src={laPopular} alt="Imagen panoramica de La Popular" loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoPopular} alt="Short description" />
+                <img src={logoPopular} alt="Logo de La Popular" loading='lazy' />
               </figure>
             </div>
             <div class="card__body">
@@ -126,12 +124,11 @@ export default function Projects() {
         <article className="projects-container-project">
           <div class="card" data-effect="zoom">
             <figure class="card__image">
-              {/* <img src={desktop} alt="Short description" /> */}
-              <img src={desktop2} alt="Short description" />
+              <img src={desktop2} alt="Imagen panoramica de Portafolio" loading='lazy' />
             </figure>
             <div class="card__header">
               <figure class="card__profile">
-                <img src={logoJS} alt="Short description" />
+                <img src={logoJS} alt="Logo de mi portafolio" loading='lazy' />
               </figure>
             </div>
             <div class="card__body">

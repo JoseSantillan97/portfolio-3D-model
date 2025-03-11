@@ -1,8 +1,8 @@
-import facebook from './../assets/images/facebook.png'
-import instagram from './../assets/images/instagram.png'
-import whatsapp from './../assets/images/whatsapp.png'
-import github from './../assets/images/github.png'
-import linkedin from './../assets/images/linkedin.png'
+import facebook from './../assets/images/facebook.webp'
+import instagram from './../assets/images/instagram.webp'
+import whatsapp from './../assets/images/whatsapp.webp'
+import github from './../assets/images/github.webp'
+import linkedin from './../assets/images/linkedin.webp'
 import SplineBMO from './SplineBMO'
 import '../styles/components/_main-section.scss'
 
@@ -26,11 +26,11 @@ export default function MainPage() {
           </div>
         </div>
         <div className="container-main-sec2">
-          <a target="_blank" href="https://www.facebook.com/no.te.robes.mi.url/"><img src={facebook} alt="" /></a>
-          <a target="_blank" href="https://www.instagram.com/josealfredo_santillanreyes/"><img src={instagram} alt="" /></a>
-          <a target="_blank" href="https://wa.me/+526771053138"><img src={whatsapp} alt="" /></a>
-          <a target="_blank" href="https://github.com/JoseSantillan97"><img src={github} alt="" /></a>
-          <a target="_blank" href="https://www.linkedin.com/in/jose-santillan-b9355a223/"><img src={linkedin} alt="" /></a>
+          <a target="_blank" href="https://www.facebook.com/no.te.robes.mi.url/"><img src={facebook} alt="Facebook" loading="lazy" /></a>
+          <a target="_blank" href="https://www.instagram.com/josealfredo_santillanreyes/"><img src={instagram} alt="Instagram" loading="lazy" /></a>
+          <a target="_blank" href="https://wa.me/+526771053138"><img src={whatsapp} alt="Whatsapp" loading="lazy" /></a>
+          <a target="_blank" href="https://github.com/JoseSantillan97"><img src={github} alt="GitHub" loading="lazy" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jose-santillan-b9355a223/"><img src={linkedin} alt="LinkedIn" loading="lazy" /></a>
         </div>
       </div >
     </section >

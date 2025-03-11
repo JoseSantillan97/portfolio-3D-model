@@ -4,16 +4,27 @@ import ParticleImage, {
   forces,
   ParticleForce
 } from "react-particle-image"
-import react from './../logo.svg'
+import react from './../assets/images/logo.svg'
 import basic from './../assets/images/html.svg'
 import clientServer from './../assets/images/graphql.svg'
 import octocat from './../assets/images/github-tile.svg'
 import '../styles/components/_tooling.scss'
 
+const createParticleOptions = (color: string, filter: Function): ParticleOptions => ({
+  filter: filter,
+  color: color,
+  radius: () => Math.random() * 1.5 + 0.5,
+  mass: () => 40,
+  friction: () => 0.15,
+  initialPosition: ({ canvasDimensions }) => {
+    return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
+  }
+});
+
 const particleOptionsBasic: ParticleOptions = {
   filter: ({ x, y, image }) => {
     const pixel = image.get(x, y);
-    return pixel.b > 80;
+    return pixel.b > 50;
   },
   color: ({ x, y, image }) => "#e34f26",
   radius: () => Math.random() * 1.5 + 0.5,
@@ -63,7 +74,6 @@ const particleOptionsMore: ParticleOptions = {
   initialPosition: ({ canvasDimensions }) => {
     return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
   }
-
 };
 
 const motionForce = (x: number, y: number): ParticleForce => {
